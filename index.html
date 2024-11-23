@@ -1,13 +1,130 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f7f6;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .features ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 1rem;
+      margin: 10px 0;
+      color: #555;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .features li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+    }
+
+    .cta {
+      margin-top: 30px;
+      padding: 15px 25px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
 <body>
 
-<h1>Hello CI/CD</h1>
+  <div class="container">
+    <h1>Welcome to the CI/CD Demo!</h1>
+    <p>This page was deployed automatically using CI/CD through GitHub Actions.</p>
 
+    <div class="features">
+      <h2>Features:</h2>
+      <ul>
+        <li>Automatic Deployment with GitHub Actions</li>
+        <li>Live Preview of Changes with Continuous Integration</li>
+        <li>Easy Configuration and Automation</li>
+        <li>Seamless Updates Every Time Code is Pushed to Main</li>
+      </ul>
+    </div>
+
+    <button class="cta" onclick="alert('Thank you for visiting! Stay tuned for more demos!')">Explore More Demos</button>
+  </div>
 
 </body>
-
-
 
 </html>
